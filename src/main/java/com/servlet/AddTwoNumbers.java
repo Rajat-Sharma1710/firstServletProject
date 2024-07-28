@@ -16,7 +16,6 @@ import javax.servlet.http.HttpSession;
  * 2. service(req, res) is the method that does the processing with the incoming
  * 	  request and returns the response.
  */
-@WebServlet("/add")
 public class AddTwoNumbers extends HttpServlet{
 	
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
