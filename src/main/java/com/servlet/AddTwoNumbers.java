@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpSession;
  * 2. service(req, res) is the method that does the processing with the incoming
  * 	  request and returns the response.
  */
+@WebServlet("/add")
 public class AddTwoNumbers extends HttpServlet{
 	
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
